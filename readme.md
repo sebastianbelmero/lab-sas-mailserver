@@ -105,72 +105,8 @@ geyl@sebastian.com;
 meily@sebastian.com;
 sebastian@sebastian.com;
 
-
-# Install LAMP (Linux Apache Mysql PHP)
-### Install Apache    
-
 allow apache
 ```
 ufw allow in "Apache"
 ufw allow in "Apache Full"
-```
-
-### Install MYSQL
-```
-apt install mysql-server
-```
-```
-systemctl start mysql
-```
-```
-mysql_secure_installation
-```
-```
-y -> 0 -> y -> y -> y -> y -> y
-```
-
-### Setting MYSQL
-```
-mysql
-```
-
-```
-create user 'server'@'localhost' identified by 'server123';
-```
-
-```
-grant all privileges on *.* to 'server'@'localhost';
-```
-
-```
-flush privileges;
-```
-
-```
-exit
-```
-
-```
-mysql -u server -p
-```
-password : server123
-
-
-coba buat database, tablenya dan isinya
-```
-create database db_mahasiswa;
-use db_mahasiswa;
-create table mahasiswa(
-id int primary key auto_increment,
-nama varchar(100),
-nim varchar(9),
-email varchar(100)
-);
-insert into mahasiswa (nama, nim, email) values
-('Anggi Yohanes Pardede', '191402143', 'anggiyohanespdd@gmail.com'),
-('Daniel Situmeang', '191402140', 'dsitumeang47@gmail.com'),
-('Geylfedra Matthew Panggabean', '191402065', 'geylrillas@gmail.com'),
-('Meily Benedicta', '191402053', 'meilybenedicta2001@gmail.com'),
-('Sebastian Belmero Sitorus', '191402113', 'sebastian.belmero.1@gmail.com');
-exit;
 ```
