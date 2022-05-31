@@ -98,13 +98,6 @@ chown -R meily:meily /var/www/html/meily
 chown -R sebastian:sebastian /var/www/html/sebastian
 ```
 
-emailnya
-anggi@sebastian.com;
-daniel@sebastian.com;
-geyl@sebastian.com;
-meily@sebastian.com;
-sebastian@sebastian.com;
-
 allow apache
 ```
 ufw allow in "Apache"
